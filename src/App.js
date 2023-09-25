@@ -14,6 +14,8 @@ export default class App extends Component {
      <Nav  />
      <Cont />
      <Login login="Login here"/>
+
+     
       </div>
     )
   }

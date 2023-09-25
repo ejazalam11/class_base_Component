@@ -20,15 +20,20 @@
     float: left;
     height: 75px;
 }
-.logo{
-    color: rgb(255, 255, 255);
+
+ 
+ .logo{
+    background-image: url(../images/login.png);
+     
+    /* color: rgb(255, 255, 255);
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
+    margin-top: 10px; */
 
-}
+} 
 .menu{
     width: 300px;
     height: 70px;
@@ -68,6 +73,7 @@ ul li a:hover{
     width: 330px;
     float: left;
     margin-left: 270px;
+    margin-top: 10px;
 }
 .srch{
     font-family: 'Times New Roman', Times, serif;
@@ -102,4 +108,9 @@ border-top-left-radius: 5px;
 }
 .srch:focus{
     outline: none;
+}
+
+FontAwesomeIcon {
+    font-size:40px ;
+    color: aliceblue;
 }
