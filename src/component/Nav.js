@@ -1,6 +1,7 @@
 import React from 'react';
 import "../style/Nav.css";
-import images from "../images/login.png"
+import images from "../images/we.jpg"
+
 import  { FontAwesomeIcon }  from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 export default function Nav() {
@@ -12,7 +13,7 @@ export default function Nav() {
             </div>
             <div className="menu">
                 <ul>
-                <li><FontAwesomeIcon  icon="fa-brands fa-facebook" /></li>
+                <FontAwesomeIcon icon="fa-brands fa-facebook" />
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">SERVICES</a></li>
