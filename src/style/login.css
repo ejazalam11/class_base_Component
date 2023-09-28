@@ -69,12 +69,24 @@
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
+    color: azure;
 }
 .form .link a{
     text-decoration: none;
     color: orangered;
+    text-decoration: underline;
+    font-size: 19px;
+}
+.link a:hover{
+    color: red;
+    transform: scale(1.2);
 
 }
+.liw{
+    color: aliceblue;
+}
+
+/* }
 .icons a{
     text-decoration: none;
     color: #fff;
@@ -88,4 +100,4 @@
 }
 .icons ion-icon:hover{
     color: #ff7200;
-}
+} */

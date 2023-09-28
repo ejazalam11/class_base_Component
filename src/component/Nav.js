@@ -1,32 +1,52 @@
-import React from 'react';
+import React from "react";
 import "../style/Nav.css";
-import images from "../images/we.jpg"
+import images from "../images/we.jpg";
+import Button from "./Button";
+import Para from "./Para";
+import Input from "./Input";
 
-import  { FontAwesomeIcon }  from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-export default function Nav() {
+
+export default function Nav(props) {
+ 
+    const navList = [
+      {
+        title: 'Home'
+      },
+      {
+        title: 'About'
+      },
+      {
+        title: 'Services',
+      
+      },
+      {
+        title: 'Design',
+       
+      }
+    ];
   return (
-    
-        <div className="navbar">
-            <div className="icon">
-                <div className="logo"></div>
-            </div>
-            <div className="menu">
-                <ul>
-                <FontAwesomeIcon icon="fa-brands fa-facebook" />
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">DESIGN</a></li>
-                    
-                </ul>
-            </div>
-            <div className="search">
-                <input className="srch" type="search" name="" placeholder="Type to search "/>
-                <a href=""><button className="btn">search </button></a>
-                <FontAwesomeIcon  icon="fa-brands fa-facebook" />
-            </div>
+    <div className="navbar">
+      <div className="icon">
+        <div className="logo"></div>
+      </div>
+      <div className="menu">
+      <ul >
+      {navList.map((item, index,) => (
+        <li key={index}>{item.title} {item.heading}</li> 
+       
+      ))}
+    </ul>
+                
+           
+       
+      </div>
+      <div className="search">
+      
+        <Input className="srch" type="search" placeholder="Type to Search"/>
+        <a href="">
+          <Button label="Search" className="btn"/>
+        </a>
+      </div>
     </div>
-    // </div>
-  )
+  );
 }

@@ -1,15 +1,24 @@
-import React from 'react'
-import "../style/Cont.css"
-export default function Cont() {
+import React from "react";
+import "../style/Cont.css";
+import Button from "./Button";
+import Para from "./Para";
+export default function Cont(props) {
   return (
+    <div className="content">
+      <h1>
+        {props.web}
+        <br />
+        <span>Development</span>
+        <br />
+        Course
+      </h1>
 
-       <div className="content">
-                <h1>Web Design &<br/><span>Development</span><br/>Course</h1>
-                <p className="par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. et consequuntur,<br/> praesentium, nobis quod labore architecto?</p>
+      <Para
+        className="par"
+        text="We are Excited to announce the courses of web design and development"
+      />
 
-                <button className="cn"><a href="#">JOIN US</a></button>
-                </div>
-                
-    
-  )
+      <Button label="JOIN US" className={"cn"} />
+    </div>
+  );
 }
