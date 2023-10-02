@@ -36,10 +36,6 @@ export default function Nav(props) {
        
       ))}
     </ul>
-                
-           
-       
-
        
       </div>
       <div className="search">
@@ -50,5 +46,5 @@ export default function Nav(props) {
         </a>
       </div>
     </div>
-  );
+  );  
 }
